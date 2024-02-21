@@ -14,3 +14,24 @@
  *= require_self
  */
  @import "bootstrap";
+
+ img{
+    border-radius: 1rem;
+    width: 100%;
+ }
+ .intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+ }
+ .icone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .icone img{
+    width: 40px;
+    height: 40px    ;
+ }

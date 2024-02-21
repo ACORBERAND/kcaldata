@@ -1,4 +1,5 @@
 <!-- Header -->
+<link rel="stylesheet" href="../../stylesheets/application.scss">
 <div class="container-flouid">
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
@@ -40,21 +41,31 @@
 
 
   <img src="<%= boeuf.image %>" alt="">
-
-  <p>
-    <strong>Duration:</strong>
-    <%= boeuf.duration %>min
-  </p>
-
-  <p>
-    <strong>Difficult:</strong>
-    <%= boeuf.difficult %>
-  </p>
-
-  <p>
-    <strong>Kcal:</strong>
-    <%= boeuf.kcal %>
-  </p>
+  <!-- Première partie de la carte recette avec le temps, la difficulté et le nombre de Kcal-->
+  <div class="intro">
+    <div class="icone">
+      <img src="https://cdn-icons-png.flaticon.com/512/3003/3003126.png" alt="icone timer">
+      <p>
+        <%= boeuf.duration %>min
+      </p>
+    </div>
+    <div class="icone">
+      <h3>
+        <strong>Difficulté</strong>
+      </h3>
+      <p>
+        <%= boeuf.difficult %>
+      </p>
+    </div>
+    <div class="icone">
+      <h3>
+        <strong>Kcal</strong>
+      </h3>
+      <p>
+        <%= boeuf.kcal %>
+      </p>
+    </div>
+  </div>
 
   <p>
     <strong>Name:</strong>
