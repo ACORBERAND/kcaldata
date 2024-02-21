@@ -1,0 +1,16 @@
+<h1>Editing boeuf</h1>
+
+<%= render "form", boeuf: @boeuf %>
+<br>
+<div>
+  <button id="add_ingredient">Ajouter un ingrédient</button>
+  <button id="add_step">Ajouter une étape</button>
+</div>  
+<script src="../../assets/javascript/edit.js">
+
+<br>
+
+<div>
+  <%= link_to "Show this boeuf", @boeuf %> |
+  <%= link_to "Back to boeufs", boeufs_path %>
+</div>

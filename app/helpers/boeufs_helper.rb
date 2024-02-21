@@ -1,0 +1,2 @@
+module BoeufsHelper
+end

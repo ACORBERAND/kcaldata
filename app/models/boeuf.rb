@@ -1,0 +1,2 @@
+class Boeuf < ApplicationRecord
+end
