@@ -1,95 +1,78 @@
-<!-- Header -->
-<link rel="stylesheet" href="../../stylesheets/application.scss">
-<div class="container-flouid">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <h3>Your Logo</h3>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Member</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Courses</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Blog</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Event</a>
-          </li>
-
-        </ul>
-        <form class="">
-          <a class="btn btn-outline-primary mr-2" href="#">Login</a>
-          <a class="btn btn-outline-success" href="#">Become member</a>
-        </form>
-
-      </div>
-    </div>
-  </nav>
-</div>        
-
-<div class="container " id="<%= dom_id boeuf %>">
+<div class="container card" id="<%= dom_id boeuf %>" >
 
 
   <img src="<%= boeuf.image %>" alt="">
   <!-- Première partie de la carte recette avec le temps, la difficulté et le nombre de Kcal-->
-  <div class="intro">
+  <div class="container intro">
     <div class="icone">
       <img src="https://cdn-icons-png.flaticon.com/512/3003/3003126.png" alt="icone timer">
+      <h5>
+        <strong><%= boeuf.duration %>min</strong>
+      </h5>
       <p>
-        <%= boeuf.duration %>min
+        Durée
       </p>
     </div>
     <div class="icone">
-      <h4>
-        <strong>Difficulté</strong>
-      </h4>
-      <p>
-        <%= boeuf.difficult %>
-      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3003/3003126.png" alt="icone timer">
+      <div class="indic">
+        <h5>
+          <strong><%= boeuf.difficult %></strong>
+        </h5>
+        <p>
+          Difficulté
+        </p>
+      </div>
     </div>
     <div class="icone">
-      <h4>
-        <strong>Kcal</strong>
-      </h4>
+      <img src="https://cdn-icons-png.flaticon.com/512/3003/3003126.png" alt="icone timer">
+      <h5>
+        <strong><%= boeuf.kcal %></strong>
+      </h5>
       <p>
-        <%= boeuf.kcal %>
+        Kcal
       </p>
     </div>
   </div>
 
   <h2>
-    <%= boeuf.name %>
+    <strong><%= boeuf.name %></strong>
   </h2>
 
   <p>
     <%= boeuf.description %>
   </p>
+  <!--Partie valeur nutritionnelles de la recette-->
+  <div class="nutrition_value">
+    <h3>Informations nutritionnelles</h3>
+    <div class="nutrition">
+      <p>
+        <strong>Glucides:</strong>
+      </p>
+      <p>
+        <%= boeuf.carbohydrates %>g
+      </p>
+    </div>
+    <div class="nutrition"> 
+      <p>
+        <strong>Protéines:</strong>
+      </p>
+      <p>
+        <%= boeuf.proteins %>g
+      </p>
+    </div>
+    <div class="nutrition">
+      <p>
+        <strong>Lipides:</strong>
+      </p>
+      <p>
+        <%= boeuf.lipids %>g
+      </p>
+    </div>
+  </div>
 
-  <p>
-    <strong>Carbohydrates:</strong>
-    <%= boeuf.carbohydrates %>g
-  </p>
-
-  <p>
-    <strong>Proteins:</strong>
-    <%= boeuf.proteins %>g
-  </p>
-
-  <p>
-    <strong>Lipids:</strong>
-    <%= boeuf.lipids %>g
-  </p>
-
+  <!-- Partie ingrédient-->
   <p>
     <strong>Ingredient:</strong>
     <%= boeuf.ingredient %>

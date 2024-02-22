@@ -1,14 +1,46 @@
-<p style="color: green"><%= notice %></p>
+<!-- Header -->
+<link rel="stylesheet" href="../../stylesheets/application.scss">
+<div class="container-flouid">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <h3>Your Logo</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-<h1>Boeufs</h1>
+        </ul>
+        <form class="">
+          <a class="btn btn-outline-primary mr-2" href="#">Login</a>
+          <a class="btn btn-outline-success" href="#">Become member</a>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+</div>   
+
+<p style="color: green"><%= notice %></p>
 
 <div id="boeufs">
   <% @boeufs.each do |boeuf| %>
     <%= render boeuf %>
-    <p>
-      <%= link_to "Show this boeuf", boeuf %>
-    </p>
+    <div class="container new-container">
+      <a>
+        <button class="button_show">
+          <strong><%= link_to "Voir la recette", boeuf %></strong>
+        </button>
+      </a>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New boeuf", new_boeuf_path %>
+<div class="container new-container">
+  <a>
+  <button class="button_new">
+  <strong><%= link_to "Nouvelle recette", new_boeuf_path %></strong>
+  </button>
+  </a>
+</div>
