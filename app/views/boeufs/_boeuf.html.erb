@@ -2,7 +2,7 @@
 <div class="container card" id="<%= dom_id boeuf %>" >
 
 
-  <img src="<%= boeuf.image %>" alt="">
+  <img class="img_boeuf" src="<%= boeuf.image %>" alt="">
   <!-- Première partie de la carte recette avec le temps, la difficulté et le nombre de Kcal-->
   <div class="container intro">
     <div class="icone">
@@ -73,24 +73,26 @@
   </div>
 
   <!-- Partie ingrédient-->
-  <p>
-    <strong>Ingredient:</strong>
-    <%= boeuf.ingredient %>
-  </p>
+  <div class="container">
+    <div class="ingredients">
+      <p>
+        <strong><%= boeuf.ingredient %></strong>
+      </p>
 
-  <p>
-    <strong>Quantity:</strong>
-    <%= boeuf.quantity %>g
-  </p>
+      <p>
+        <%= boeuf.quantity %>g
+      </p>
+    </div>
 
-  <p>
-    <strong>Step:</strong>
-    <%= boeuf.step %>
-  </p>
+    <div class="steps">
+      <p>
+        <strong><%= boeuf.step %></strong>
+      </p>
 
-  <p>
-    <strong>Step description:</strong>
-    <%= boeuf.step_description %>
-  </p>
+      <p>
+        <%= boeuf.step_description %>
+      </p>
+    </div>
+  </div>
 
 </div>
