@@ -38,6 +38,9 @@
   width: 100%;
   height: 100%;
   filter: brightness(60%);
+  @media (min-width: 780px){
+    height: 500px;
+  }
 }
 .img_header{
   display: flex;
@@ -235,5 +238,34 @@ letter-spacing: 0.16px;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+/* Partie edit*/
+.h1_edit{
+  text-align: center;
+  font-weight: 600;
+}
+.d-grid{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  input{
+    border: 1px solid rgba(241, 68, 37, 0.4);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  textarea{
+    border: 1px solid rgba(241, 68, 37, 0.4);
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 780px){
+  .card{
+    width: 500px !important;
+  }
+  .d-grid{
+    font-size: 18px;
+  }
 }
 
