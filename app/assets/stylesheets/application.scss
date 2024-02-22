@@ -20,8 +20,8 @@
 }
  .menu{
   border: 1px solid rgba(38, 37, 34, 0.24);
-  border-radius: 8px;
-  padding: 8px;
+  border-radius: 28px;
+  padding: 16px;
  }
  /* img header avec texte*/
  .text_header{
@@ -74,7 +74,7 @@
 }
 .new-container2 a{
   text-decoration: none;
-  color: rgba(241, 68, 37, 0.4);
+  color: #EE6352;
 }
 .button_new{
   width: 200px;
@@ -82,22 +82,23 @@
   background: transparent;
   border-radius: 4px;
     transition: 0.5s;
-    border: 2px solid rgba(241, 68, 37, 0.4);
+    border: 2px solid rgba(238, 99, 82, 1);
 }
 .button_new:hover{
   transition: 0.5s;
   border: none;
-  background: rgba(241, 68, 37, 0.4);
+  background: rgba(238, 99, 82, 1);
 }
 /* Partie boeuf.html.erb*/
  body{
    background: #faf3e9;
  }
  .card{
-   backdrop-filter: blur(16px);
-   border:none;
-   padding: 0;
-   margin-top: 64px;
+  background: transparent;
+  border:2px solid rgba(38, 37, 34, 0.24);
+  border-radius: 12px;
+  padding: 0;
+  margin-top: 64px;
  }
 
  .img_boeuf{
@@ -125,8 +126,6 @@
    display: flex;
    flex-direction: column;
    background: rgba(241, 68, 37, 0.4);
-   padding: 8px 4%;
-   border-radius: 16px 0 16px 0;
  }
  .nutrition{
    display: flex;
