@@ -170,3 +170,16 @@ font-weight: 300;
 line-height: 140%; /* 22.4px */
 letter-spacing: 0.16px;
 }
+
+.abonnement {
+  text-decoration: none;
+}
+
+.abonnement button{
+  border: none;
+  background: #262522;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+}
