@@ -139,3 +139,46 @@
   justify-content: space-between;
   padding-top: 8px;
  }
+
+/* text recette*/
+
+.text-recette {
+  display: flex;
+  color: var(--Dark, #262522);
+text-align: center;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 40px */
+letter-spacing: 0.4px;
+text-transform: uppercase;
+width: 100%;
+align-items: center;
+justify-content: center;
+padding-top: 112px;
+}
+
+.descriptif-top {
+  color: rgba(38, 37, 34, 0.80);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 140%; /* 22.4px */
+letter-spacing: 0.16px;
+}
+
+.abonnement {
+  text-decoration: none;
+}
+
+.abonnement button{
+  border: none;
+  background: #262522;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+}
