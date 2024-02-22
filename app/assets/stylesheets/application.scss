@@ -14,10 +14,14 @@
  *= require_self
  */
  @import "bootstrap";
-/* Pqrtie index.html.erb*/
+/* Pqrtie application.html.erb*/
  .bg-light {
-  background-color: rgba(241, 68, 37, 0.4) !important;
+  background-color: transparent !important;
 }
+ .menu{
+  border: 1px solid rgba(38, 37, 34, 0.24);
+  border-radius: 32px;
+ }
 /* Bouton voir les recettes*/
 .button_show{
   width: 200px;
