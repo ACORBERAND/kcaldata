@@ -65,12 +65,24 @@
   text-decoration: none;
   color: black;
 }
+.new-container2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+.new-container2 a{
+  text-decoration: none;
+  color: rgba(241, 68, 37, 0.4);
+}
 .button_new{
   width: 200px;
   height: 50px;
   background: transparent;
   border-radius: 4px;
-  border: 2px solid #000;
+    transition: 0.5s;
+    border: 2px solid rgba(241, 68, 37, 0.4);
 }
 .button_new:hover{
   transition: 0.5s;
