@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_21_090225) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_23_140721) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,6 +30,32 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_21_090225) do
     t.text "step_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "ingredient1"
+    t.float "quantity1"
+    t.string "ingredient2"
+    t.float "quantity2"
+    t.string "ingredient3"
+    t.float "quantity3"
+    t.string "ingredient4"
+    t.float "quantity4"
+    t.string "ingredient5"
+    t.float "quantity5"
+    t.string "ingredient6"
+    t.float "quantity6"
+    t.string "ingredient7"
+    t.float "quantity7"
+    t.string "ingredient8"
+    t.float "quantity8"
+    t.string "ingredient9"
+    t.float "quantity9"
+    t.text "step2"
+    t.text "step3"
+    t.text "step4"
+    t.text "step5"
+    t.text "step6"
+    t.text "step7"
+    t.text "step8"
+    t.text "step9"
   end
 
   create_table "filters", force: :cascade do |t|

@@ -15,7 +15,7 @@ class CreateBoeufs < ActiveRecord::Migration[7.1]
       t.string :step
       t.text :step_description
 
-      t.timestamps
+      t.string :ingredient2
     end
   end
 end
