@@ -1,10 +1,16 @@
+<link rel="stylesheet" href="../../stylesheets/application.scss">
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @boeuf %>
 
-<div>
-  <%= link_to "Edit this boeuf", edit_boeuf_path(@boeuf) %> |
-  <%= link_to "Back to boeufs", boeufs_path %>
-
-  <%= button_to "Destroy this boeuf", @boeuf, method: :delete %>
+<div class="container button_edit">
+  <a class="button_1">
+      <%= button_to "Modifier la recette", edit_boeuf_path(@boeuf) %>
+  </a>
+  <a class="button_back">
+      <%= button_to "Retour", boeufs_path %>
+  </a>
+  <a class="button_destroy">
+  <%= button_to "Supprimer", @boeuf, method: :delete %>
 </div>
