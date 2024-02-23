@@ -205,13 +205,34 @@ letter-spacing: 0.16px;
 
 .abonnement button{
   border: none;
-  background: #262522;
-  color: #fff;
-  width: 100px;
+  background: #f8a32c;
+  color: #000;
+  width: 180px;
   height: 35px;
   border-radius: 4px;
+  transition: 0.5s;
+}
+.abonnement button:hover{
+  transition: 0.5s;
+  background: transparent;
 }
 
+.title-logo {
+  color: var(--Dark, #262522);
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 15px */
+width: 55px;
+margin: 0;
+}
+.navbar-brand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
 
 #footer {
   width: 100%;
