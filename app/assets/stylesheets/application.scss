@@ -55,7 +55,7 @@
   background: #f8a32c;
   border-radius: 4px;
   border: none;
-
+  transition: 0.5s;
 }
 .button_show:hover{
   transition: 0.5s;
@@ -89,8 +89,9 @@
   height: 50px;
   background: transparent;
   border-radius: 4px;
-    transition: 0.5s;
-    border: 2px solid rgba(238, 99, 82, 1);
+  transition: 0.5s;
+  border: 2px solid rgba(238, 99, 82, 1);
+  transition: 0.5s;
 }
 .button_new:hover{
   transition: 0.5s;
@@ -267,41 +268,26 @@ letter-spacing: 0.16px;
   align-items: center;
   justify-content: center;
   padding: 30px 0;
-  .button_1 button{
-    background: transparent;
-    border: 2px solid rgba(241, 68, 37, 0.4);
-    transition: 0.5s;
-  }
-  .button_back button{
-    background: #f8a32c;
-    transition: 0.5s;
+  a{
+    text-decoration: none;
+    color: #000;
   }
   .button_destroy button{
     background: transparent;
     border: 2px solid rgba(241, 68, 37, 0.4);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
     transition: 0.5s;
   }
 }
-.button_1 button:hover{
-  transition: 0.5s;
-  background: rgba(241, 68, 37, 0.4);
-  border: none;
-}
-.button_back button:hover{
-  transition: 0.5;
-  background: transparent;
-}
+
 .button_destroy button:hover{
   transition: 0.5s;
   background: rgba(241, 68, 37, 0.4);
   border: transparent;
 }
-.button_edit button{
-  border: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-}
+
 @media (min-width: 780px){
   .card{
     width: 500px !important;

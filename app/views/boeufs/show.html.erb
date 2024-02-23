@@ -5,12 +5,21 @@
 <%= render @boeuf %>
 
 <div class="container button_edit">
-  <a class="button_1">
-      <%= button_to "Modifier la recette", edit_boeuf_path(@boeuf) %>
-  </a>
-  <a class="button_back">
-      <%= button_to "Retour", boeufs_path %>
-  </a>
+  <div>
+    <a>
+      <button class="button_new">
+        <strong><%= link_to "Modifier la recette", edit_boeuf_path(@boeuf) %></strong>
+      </button>
+    </a>
+  </div>
+  <div class="">
+    <a>
+      <button class="button_show">
+        <strong><%= link_to "Retour", boeufs_path %></strong>
+      </button>
+    </a>
+  </div>
   <a class="button_destroy">
   <%= button_to "Supprimer", @boeuf, method: :delete %>
+  </a>
 </div>
