@@ -259,7 +259,49 @@ letter-spacing: 0.16px;
     margin-bottom: 16px;
   }
 }
-
+.button_edit{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  .button_1 button{
+    background: transparent;
+    border: 2px solid rgba(241, 68, 37, 0.4);
+    transition: 0.5s;
+  }
+  .button_back button{
+    background: #f8a32c;
+    transition: 0.5s;
+  }
+  .button_destroy button{
+    background: transparent;
+    border: 2px solid rgba(241, 68, 37, 0.4);
+    transition: 0.5s;
+  }
+}
+.button_1 button:hover{
+  transition: 0.5s;
+  background: rgba(241, 68, 37, 0.4);
+  border: none;
+}
+.button_back button:hover{
+  transition: 0.5;
+  background: transparent;
+}
+.button_destroy button:hover{
+  transition: 0.5s;
+  background: rgba(241, 68, 37, 0.4);
+  border: transparent;
+}
+.button_edit button{
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}
 @media (min-width: 780px){
   .card{
     width: 500px !important;
