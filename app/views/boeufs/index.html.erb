@@ -26,6 +26,8 @@
 <p style="color: green"><%= notice %></p>
 
 <div id="boeufs">
+  <div class="box_food row">
+  <div class="col-md-6">
   <% @boeufs.each do |boeuf| %>
     <%= render boeuf %>
     <div class="container new-container">
@@ -35,12 +37,15 @@
         </button>
       </a>
     </div>
+  </div>
+  <div class="col-md-6">
   <% end %>
+  </div>
 </div>
-<div class="container new-container2">
-  <a>
-  <button class="button_new">
-  <strong><%= link_to "Nouvelle recette", new_boeuf_path %></strong>
-  </button>
- 
-</div>
+    <div class="container new-container2">
+      <a>
+      <button class="button_new">
+      <strong><%= link_to "Nouvelle recette", new_boeuf_path %></strong>
+      </button>
+    
+    </div>

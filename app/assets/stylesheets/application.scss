@@ -132,6 +132,13 @@
   margin-top: 64px;
  }
 
+.box_food{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
  .img_boeuf{
     border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
@@ -172,6 +179,12 @@
  }
 
 /* text recette*/
+#boeufs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
 
 .text-recette {
   display: flex;
