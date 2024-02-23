@@ -217,8 +217,22 @@ letter-spacing: 0.16px;
   background: transparent;
 }
 
-
-
+.title-logo {
+  color: var(--Dark, #262522);
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 15px */
+width: 55px;
+margin: 0;
+}
+.navbar-brand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
 
 #footer {
   width: 100%;
