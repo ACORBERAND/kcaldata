@@ -1,10 +1,14 @@
+
+<p>oubfbo </p>
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Kcaldata</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+<title>A Propos</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+<link rel="stylesheet" href="../../assets/stylesheets/apropos.scss">
+<link rel="stylesheet" href="../../assets/stylesheets/application.scss">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -30,9 +34,7 @@
                 <a class="nav-link" aria-current="page" href="#">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">
-                <%= link_to "À Propos", boeufs_path %>
-                </a>
+                <a class="nav-link" href="/apropos.html.erb">A Propos</a>
               </li>
             </ul>
             <a class="abonnement" href="mailto:antoine.courcaud@gmail.com">
