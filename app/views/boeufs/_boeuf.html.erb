@@ -73,6 +73,7 @@
   </div>
 
   <!-- Partie ingrédient-->
+  <% if boeuf.ingredient.present? %>
   <div class="container">
     <div class="ingredients">
       <p>
@@ -80,19 +81,179 @@
       </p>
 
       <p>
-        <%= boeuf.quantity %>g
+        <%= boeuf.quantity %>
       </p>
     </div>
+    <% end %>
 
-    <div class="steps">
+    <% if boeuf.ingredient2.present? %>
+    <div class="ingredients">
       <p>
-        <strong><%= boeuf.step %></strong>
+        <strong><%= boeuf.ingredient2 %></strong>
       </p>
 
+      <p>
+        <%= boeuf.quantity2 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.ingredient3.present? %>
+    <div class="ingredients">
+      <p>
+        <strong><%= boeuf.ingredient3 %></strong>
+      </p>
+
+      <p>
+        <%= boeuf.quantity3 %>
+      </p>
+    </div>
+    <% end%>
+
+    <% if boeuf.ingredient4.present? %>
+      <div class="ingredients">
+        <p>
+          <strong><%= boeuf.ingredient4 %></strong>
+        </p>
+
+        <p>
+          <%= boeuf.quantity4 %>
+        </p>
+      </div>
+    <% end%>
+
+    <% if boeuf.ingredient5.present? %>
+      <div class="ingredients">
+        <p>
+          <strong><%= boeuf.ingredient5 %></strong>
+        </p>
+
+        <p>
+          <%= boeuf.quantity5 %>
+        </p>
+      </div>
+    <% end%>
+
+    <% if boeuf.ingredient6.present? %>
+      <div class="ingredients">
+        <p>
+          <strong><%= boeuf.ingredient6 %></strong>
+        </p>
+
+        <p>
+          <%= boeuf.quantity6 %>
+        </p>
+      </div>
+    <% end %>
+
+    <% if boeuf.ingredient7.present? %>
+    <div class="ingredients">
+      <p>
+        <strong><%= boeuf.ingredient7 %></strong>
+      </p>
+
+      <p>
+        <%= boeuf.quantity7 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.ingredient8.present? %>
+    <div class="ingredients">
+      <p>
+        <strong><%= boeuf.ingredient8 %></strong>
+      </p>
+
+      <p>
+        <%= boeuf.quantity8 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.ingredient9.present? %>
+    <div class="ingredients">
+      <p>
+        <strong><%= boeuf.ingredient9 %></strong>
+      </p>
+
+      <p>
+        <%= boeuf.quantity9 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step_description.present? %>
+    <div class="steps">
+      <h5><strong>Etape </strong><h5>
       <p>
         <%= boeuf.step_description %>
       </p>
     </div>
+    <% end %>
+
+    <% if boeuf.step2.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step2 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step3.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step3 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step4.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step4 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step5.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step5 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step6.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step6 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step7.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step7 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step8.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step8 %>
+      </p>
+    </div>
+    <% end %>
+
+    <% if boeuf.step9.present? %>
+    <div class="steps">
+      <p>
+        <%= boeuf.step9 %>
+      </p>
+    </div>
+    <% end %>
   </div>
 
 </div>

@@ -65,6 +65,6 @@ class BoeufsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def boeuf_params
-      params.require(:boeuf).permit(:image, :duration, :difficult, :kcal, :name, :description, :carbohydrates, :proteins, :lipids, :ingredient, :quantity, :step, :step_description)
+      params.require(:boeuf).permit(:image, :duration, :difficult, :kcal, :name, :description, :carbohydrates, :proteins, :lipids, :ingredient, :quantity, :ingredient2, :quantity2, :ingredient3, :quantity3, :ingredient4, :quantity4, :ingredient5, :quantity5, :ingredient6, :quantity6, :ingredient7, :quantity7, :ingredient8, :quantity8, :ingredient9, :quantity9, :step_description, :step2, :step3, :step4, :step5, :step6, :step7, :step8, :step9 )
     end
 end
