@@ -19,8 +19,6 @@
   background-color: transparent !important;
 }
  .menu{
-  border: 1px solid rgba(38, 37, 34, 0.24);
-  border-radius: 28px;
   padding: 16px;
  }
  /* img header avec texte*/
@@ -130,6 +128,7 @@
   border-radius: 12px;
   padding: 0;
   margin-top: 64px;
+  flex-wrap: wrap;
  }
 
 .box_food{
@@ -216,6 +215,8 @@ letter-spacing: 0.16px;
 
 .abonnement {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .abonnement button{
